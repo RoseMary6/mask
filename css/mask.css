@@ -1,0 +1,303 @@
+body{
+  font-family: 'Merriweather', serif;
+}
+
+/* NAV BAR */
+.navbar{
+  background-color: #ffffff;
+  font-family: 'Genos', sans-serif;
+  /* font-family: 'Abril Fatface', cursive; */
+}
+
+.logo{
+  width: 100%;
+  height: 65px;
+}
+
+.glass{
+  width: 75%;
+  height: 25px;
+}
+
+.nav-link{
+  color: black;
+  font-size: 22px;
+  margin: 10px auto;
+}
+
+.nav-link:hover{
+  color: #548CFF;
+}
+
+.nav-item{
+  margin-right: 20px;
+}
+
+/* NAVBAR - JQUERY */
+#mainNav.navbar-shrink{
+  background-color: #ffffff;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+#mainNav.navbar-shrink .logo{
+  font-size: 40px;
+}
+
+/* banner section */
+.banner{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('../interview-pics/banner.jpg');
+  /* background: url('../interview-pics/bg-pic.jpg'); */
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-content{
+  position: absolute;
+top: 328px;
+left: 493px;
+color: #ffffff;
+text-align: center;
+}
+
+.buy{
+  background-color: #548CFF;
+  color: #ffffff;
+  border-radius: 22px;
+  padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.buy:hover{
+  background-color: #ffffff;
+  color: #548CFF;
+}
+
+.banner-heading{
+  font-size: 55px;
+}
+
+.banner-para{
+  font-size: 20px;
+}
+
+
+/* icon section  */
+.icons{
+  margin: 100px auto;
+  text-align: center;
+}
+
+.delivery-icon{
+  width: 27%;
+    height: 90px;
+    margin-bottom: 15px;
+    margin-left: 13px;
+    border-radius: 49%;
+    border-color: black;
+    border-width: medium;
+}
+
+.icon-p{
+  color: grey;
+}
+
+
+/* mask pics */
+.mask-pics{
+  margin: 100px auto;
+}
+
+.m1{
+  width: 100%;
+  height: 626px;
+}
+
+.m2{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.deal{
+  color: #ffffff;
+  transform: translate(143px, -167px);
+}
+
+.deal-btn{
+  transform: translate(-52px, -114px);
+  background-color: #ffffff;
+  color: #548CFF;
+  text-decoration: none!important;
+  border-radius: 22px;
+  padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* cart SECTION */
+.cart{
+  margin-bottom: 100px;
+}
+
+.cart-pic{
+  width: 78%;
+  margin-left: 53px;
+}
+
+.c-1{
+  color: #548CFF;
+  margin-top: 58px;
+  margin-bottom: 15px;
+}
+
+/* latest product */
+.latest{
+  text-align: center;
+  background-color: #EFEFEF;
+  padding-top: 70px;
+}
+
+.latest-h{
+  color: #548CFF;
+}
+
+.l1{
+  width: 20%;
+  color: #548CFF;
+}
+
+.l2{
+  margin-bottom: 20px;
+}
+
+.latest22{
+  margin-top: 20px;
+}
+
+.product{
+  width: 100%;
+  height: 286px;
+}
+
+.view-btn{
+  margin: 50px auto;
+    background-color: #548CFF;
+    color: #ffffff;
+    border-radius: 22px;
+    padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .view-btn:hover{
+    background-color: #ffffff;
+    color: #548CFF;
+}
+
+/* face covers */
+.face-cover{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url('../interview-pics/face.jpg');
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.face-cvr{
+  text-align: center;
+  transform: translate(3px,190px);
+}
+
+
+/* news */
+.news{
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 100px;
+}
+
+.news-pic{
+  width: 100%;
+  height: 187px;
+}
+
+.news-h{
+  color: #548CFF!important;
+
+}
+
+
+.read-btn{
+  background-color: #ffffff;
+  color: #548CFF;
+}
+
+.testimonial{
+  margin: 100px auto 50px auto;
+  text-align: center;
+}
+
+.dp{
+  border-radius: 100%;
+  width: 30%;
+  margin-left: 100px;
+    /* transform: translate(-30px, -302px); */
+}
+
+.dp2{
+  border-radius: 100%;
+  width: 30%;
+  margin-left: 100px;
+    /* transform: translate(-30px, -302px); */
+}
+
+.dp3{
+  border-radius: 100%;
+  width: 30%;
+  margin-left: 100px;
+    /* transform: translate(-30px, -302px); */
+}
+
+.test2{
+  margin-bottom: 100px;
+}
+
+/* footer */
+.foot{
+  padding-top: 50px;
+    padding-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Genos', sans-serif;
+  font-size: 20px;
+}
+
+.foot ul li{
+  text-decoration: none;
+  list-style: none;
+}
+
+.foot a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.foot a:hover{
+  color: #548CFF;
+}
+
+.f1{
+  color: #ffffff;
+}
+
+.copyright{
+  margin-top: 20px;
+text-align: center;
+}

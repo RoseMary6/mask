@@ -1,0 +1,254 @@
+body{
+  font-family: 'Merriweather', serif;
+}
+
+.title{
+  background-color: #ff4c68!important;
+  color: white;
+}
+
+.logo{
+  width: 46px;
+  height: 46px;
+}
+
+.nav-link{
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 4px 10px!important;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+background-color: black;
+}
+
+.navbar{
+  background-color: #ff4c68!important;
+}
+
+/* BANNER SECTION */
+
+.shop{
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shop:hover{
+  background-color: #ff4c68;
+}
+
+.banner{
+  position: relative;
+}
+
+.banner-pic{
+  width: 100%;
+  height: 600px;
+  padding-top: 71px;
+}
+
+.banner-content{
+  position: absolute;
+  top: 20%;
+  color: #000000;
+}
+
+h1{
+  font-family: 'Righteous', cursive;
+  font-size: 55px;
+}
+
+.banner-para{
+  color: #FFFFFF;
+  margin-top: 12px;
+  margin-bottom: 43px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+/* COLUMN SECTION */
+
+.coll{
+  margin: 100px auto;
+  text-align: center;
+}
+
+.coll h1{
+  font-size: 40px;
+}
+
+.coll h5{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* SECOND CARD SECTION */
+
+.first-card{
+  margin: 100px auto;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.first-card h1{
+  font-size: 40px;
+}
+
+.card-body{
+  background-color: #000000;
+  padding: 20px;
+}
+
+.card{
+  color: white;
+  margin-top: 50px!important;
+  box-shadow: 3px 3px 6px 0px gray;
+}
+
+.card-click{
+  text-decoration: none!important;
+}
+
+.card-body:hover{
+ box-shadow: 0px 3px 10px 0px #FF6D6D;
+}
+
+/* COVID 19 BANNER WITH DESCRIPTION */
+
+.covid-19{
+  margin: 100px auto;
+}
+
+.covid{
+  width: 100%;
+  height: 650px;
+}
+
+.covid-content{
+  position: absolute;
+  color: #ffffff;
+  transform: translate(137%, -250%);
+  text-align: right;
+}
+
+h2{
+  font-family: 'Righteous', cursive;
+  font-size: 45px;
+}
+
+.covid-para{
+  margin-top: 20px;
+}
+
+.know-more{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.know-more:hover{
+  background-color: #3EDBF0;
+}
+
+/* SHOP OUR PRODUCTS 24/7 */
+
+.shop-24{
+  margin: 100px;
+}
+
+.shopp{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 15px;
+}
+
+.tent{
+  width: 340px;
+  height: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 10px 0px #DDDDDD;
+}
+
+.shopp h5{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.shopp h6{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #FF0000;
+}
+
+/* SHOP LOCAL */
+
+.shop-local{
+  text-align: center;
+  margin: 100px;
+}
+
+
+.local-img{
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+  position: absolute;
+  transform: translate(-159%, 31%);
+}
+
+.shop-local-para{
+  width: 85%;
+  background-color: #C89595;
+  border-radius: 5px;
+  margin-left: 16%;
+  padding: 38px;
+}
+
+.nick{
+  margin-top: 60px;
+  color: #ffffff;
+}
+
+.john{
+  margin-top: 35px;
+}
+
+/* FOOTER */
+
+.the-end{
+  background-color: #000000;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+
+.brand-name{
+  color: #ffffff;
+  text-decoration: none!important;
+}
+
+.social{
+  width: 24px;
+  height: 24px
+}
+
+.social-media li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.google a{
+  color: #DA0037;
+  text-decoration: none!important;
+}
+
+.copyright{
+  padding-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+.google a:hover{
+  color: #396EB0;
+}

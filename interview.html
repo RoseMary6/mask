@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rapidmask2go</title>
+
+    <!-- jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   <script>
+
+      $(document).ready(function(){
+      "use strict"; // start of using strict
+
+     //Collapse Navbar
+       var navbarCollapse = function(){
+             if ($("#mainNav").offset().top > 100) {
+               $("#mainNav").addClass("navbar-shrink");
+             } else {
+               $("#mainNav").removeClass("navbar-shrink");
+             }
+       };
+
+     //Collapse now if the page is not at the top
+        navbarCollapse();
+
+     //Collapse the navbar when page is scrolled
+     $(window).scroll(navbarCollapse);
+
+
+
+
+              // FADE IN AND FADE OUT WHEN SCROLLED
+                  $(window).on("load",function() {
+                  $(window).scroll(function() {
+                    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                   $(".fade").each(function() {
+                  /* Check the location of each desired element */
+                   var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                  /* If the element is completely within bounds of the window, fade it in */
+                  if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                  if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                   } else { //object goes out of view (scrolling up)
+                    if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                          }
+                   });
+                 }).scroll(); //invoke scroll-handler on page-load
+                });
+
+   })(jQuery); //end of using strict
+
+   </script>
+
+    <!-- CSS & Separate -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- FAVICON - FOR LOGO ON TAB -->
+     <link rel="icon" href="favicon-mask/favicon.ico">
+    <!--CSS-->
+   <link rel="stylesheet" href="css/mask.css">
+
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&family=Bebas+Neue&family=Black+Ops+One&family=Cookie&family=Cormorant+Garamond:wght@700&family=DM+Serif+Display&family=Dancing+Script&family=Genos&family=Great+Vibes&family=Jacques+Francois+Shadow&family=Kanit&family=Merriweather&family=Montserrat&family=Nanum+Myeongjo&family=Oswald&family=PT+Sans+Narrow&family=Philosopher&family=Playball&family=Playfair+Display:ital@0;1&family=Righteous&family=Sacramento&family=Taviraj&family=Ubuntu&family=Yeseva+One&display=swap" rel="stylesheet">
+
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/6de148185c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+
+     <section class="top-banner">
+       <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+         <div class="container">
+        <a class="navbar-brand" href="#"> <img class="logo" src="interview-pics/mask-logo.png" alt="logo"> </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav ml-auto">
+       <li class="nav-item active">
+       <a class="nav-link" href="#home"> Home <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item active">
+       <a class="nav-link" href="#about-us"> Catalog </a>
+       </li>
+       <li class="nav-item active">
+       <a class="nav-link" href="#about-us"> Mask Vending Machine </a>
+       </li>
+       <li class="nav-item active">
+       <a class="nav-link" href="#blog-sec"> As Seen On... </a>
+       </li>
+       <li class="nav-item active">
+       <a class="nav-link" href="#gallery-pic-sec"> Shipping Policy </a>
+       </li>
+
+       <li class="nav-item active">
+       <a class="nav-link" href="#gallery-pic-sec"><img class="glass" src="interview-pics/glass.png" alt=""></a>
+       </li>
+
+     </ul>
+ </div>
+</div>
+</nav>
+</section>
+
+
+<!-- banner section -->
+<section class="banner">
+
+      <div class="container">
+        <div class="banner-content">
+          <h1 class="banner-heading">Face Masks For Sale</h1>
+          <p class="banner-para">We sell a variety of protective masks.</p>
+          <a href="#" class="btn btn-full buy"> BUY NOW </a>
+        </div>
+      </div>
+
+</section>
+
+<!-- icon section -->
+<section class="icons">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4 fade">
+        <img class="delivery-icon" src="interview-pics/delivery.png" alt="delivery-icon">
+        <p>DELIVERED STRAIGHT TO</p>
+        <p class="icon-p">YOUR DOOR</p>
+      </div>
+
+      <div class="col-lg-4 fade">
+        <img class="delivery-icon" src="interview-pics/free-delivery.png" alt="delivery-icon">
+        <p>FREE SHIPPING ON ORDERS</p>
+        <p class="icon-p">OVER $50</p>
+      </div>
+
+      <div class="col-lg-4 fade">
+        <img class="delivery-icon" src="interview-pics/man.png" alt="delivery-icon">
+        <p>ALL MASKS FOR</p>
+        <p class="icon-p">PERSONAL/GENERAL USE</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- mask pics -->
+<section class="mask-pics">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-6">
+         <img class="m1" src="interview-pics/mask3.jpg" alt="mask">
+       </div>
+
+       <div class="col-lg-6">
+          <img class="m2" src="interview-pics/mask1.png" alt="mask">
+           <img class="m2" src="interview-pics/mask2.png" alt="mask">
+       </div>
+
+    <h3 class="deal">Safety Bundle Deals</h3>
+    <a class="deal-btn" href="#" class="btn btn-full buy"> BUY NOW </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- cart section -->
+<section class="cart">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-6 fade">
+         <img class="cart-pic" src="interview-pics/cart1.png" alt="mask">
+       </div>
+
+       <div class="col-lg-6 fade">
+         <h4 class="c-1">5 Pack KN95 KN-95 KN95 Face Covering Individually Wrapped</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+             <a href="#" class="btn btn-full buy"> ADD TO CART </a>
+       </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- second cart -->
+<section class="cart">
+  <div class="container">
+    <div class="row">
+
+       <div class="col-lg-6 fade">
+         <h4 class="c-1">25 Pack Protective Face Mask w/ Elastic Ear Loops Individually Wrapped</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+             <a href="#" class="btn btn-full buy"> ADD TO CART </a>
+       </div>
+
+              <div class="col-lg-6 fade">
+                <img class="cart-pic" src="interview-pics/cart2.png" alt="mask">
+              </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- our latest product -->
+<section class="latest">
+  <div class="container">
+      <h2 class="latest-h">OUR LATEST PRODUCT</h2>
+      <hr class="l1">
+      <p class="l2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="row">
+
+          <div class="col-lg-4 ">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b1.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b2.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b3.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 latest22">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b4.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 latest22">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b1.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 latest22">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="product" src="interview-pics/b6.png" class="card-img-top" alt="mask">
+              <hr>
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Shipped directly to your door</p>
+              <p class="card-text">$17.25</p>
+              <a href="#" class="btn btn-full buy"> BUY NOW </a>
+              </div>
+            </div>
+          </div>
+
+         <a href="#" class="btn btn-full view-btn"> VIEW ALL </a>
+
+  </div>
+  </div>
+</section>
+
+
+<!-- face coverings -->
+<section class="face-cover">
+  <div class="container">
+    <div class="face-cvr">
+      <h1>KN 95 FACE COVERINGS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+         nisi ut aliquip ex ea commodo consequat. </p>
+    </div>
+  </div>
+</section>
+
+<!-- news -->
+<section class="news">
+  <div class="container">
+      <h2 class="latest-h">DAILY NEWS</h2>
+      <hr class="l1">
+      <p class="l2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="news-pic" src="interview-pics/news1.png" class="card-img-top" alt="mask">
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="news-pic" src="interview-pics/news2.png" class="card-img-top" alt="mask">
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="card c-options" style="width: 18rem;">
+              <img class="news-pic" src="interview-pics/news3.png" class="card-img-top" alt="mask">
+              <div class="card-body">
+              <h5 class="card-title news-h">KN95 Individually Wrapped</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                  <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          </div>
+          </div>
+</section>
+
+    <!-- testimonials -->
+<section class="testimonial">
+  <div class="container">
+    <h2 class="latest-h">TESTIMONIALS</h2>
+    <hr class="l1">
+    <p class="test2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row">
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                            <img class="dp" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp2" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp3" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <div class="row">
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                            <img class="dp" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp2" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp3" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <div class="row">
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                            <img class="dp" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp2" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                    <div class="col-lg-4">
+                      <div class="card c-options" style="width: 18rem;">
+                          <img class="dp3" src="interview-pics/man1.jpg" class="card-img-top" alt="profile">
+                        <div class="card-body">
+                        <h5 class="card-title news-h">Mark</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <a href="#" class="btn btn-full read-btn"> READ MORE -> </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- footer -->
+<section class="foot">
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-6">
+      <h5>ABOUT US</h5> <hr class="f1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. </p>
+
+    </div>
+
+    <div class="col-lg-3">
+      <h5>USEFUL LINKS</h5> <hr class="f1">
+      <ul>
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Catalog</li></a>
+        <a href="#"><li>Mask Vending Machine</li></a>
+        <a href="#">  <li>As Seen On</li></a>
+        <a href="#">  <li>Shipping Policy</li></a>
+      </ul>
+    </div>
+
+    <div class="col-lg-3">
+      <h5>QUICK LINKS</h5> <hr class="f1">
+      <ul>
+        <a href="#"><li>Privacy Policy</li></a>
+        <a href="#"><li>Refund Policy</li></a>
+        <a href="#">  <li>Terms Of Service</li></a>
+      </ul>
+    </div>
+
+  </div>
+
+<p class="copyright">Copyright 2020. Rapidmask2go. All Rights Reserved</p>
+
+</div>
+</section>
+  </body>
+</html>
